@@ -1,3 +1,6 @@
 import discord  
 from discord.ext import commands 
 import youtube_dl
+
+intents = discord.Intents().all()
+bot = commands.Bot(command_prefix='!', intents=intents)
